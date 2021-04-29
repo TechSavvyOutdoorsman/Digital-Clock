@@ -5,13 +5,13 @@ function showTime() {
     var z = date.getSeconds();
     var session = "AM";
 
-    if (x == 0) {
+    if(x == 0) {
         x = 12;
     }
 
-    if (x > 12) {
+    if(x > 12) {
         x = x - 12;
-        session: "PM";
+        session = "PM";
     }
 
     x = (x < 10) ? "0" + x : x;
